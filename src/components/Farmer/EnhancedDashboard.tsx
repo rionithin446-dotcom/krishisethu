@@ -9,7 +9,8 @@ import {
   Plus,
   Eye,
   Gift,
-  Bell
+  Bell,
+  Users
 } from 'lucide-react';
 import { Produce, MarketPrice, Transaction } from '../../types';
 
@@ -20,6 +21,7 @@ interface EnhancedDashboardProps {
   onAddProduce: () => void;
   onViewPrices: () => void;
   onViewSchemes: () => void;
+  onViewTraders: () => void;
 }
 
 const EnhancedDashboard: React.FC<EnhancedDashboardProps> = ({ 
@@ -28,7 +30,8 @@ const EnhancedDashboard: React.FC<EnhancedDashboardProps> = ({
   transactions,
   onAddProduce,
   onViewPrices,
-  onViewSchemes
+  onViewSchemes,
+  onViewTraders
 }) => {
   const activeProduces = produces.filter(p => p.status === 'active');
   const totalBids = produces.reduce((sum, p) => sum + p.bids.length, 0);
@@ -140,6 +143,19 @@ const EnhancedDashboard: React.FC<EnhancedDashboardProps> = ({
                 </div>
                 <p className="font-semibold text-gray-800">Schemes</p>
                 <p className="text-xs text-gray-500">Schemes</p>
+              </div>
+            </button>
+
+            <button
+              onClick={onViewTraders}
+              className="bg-white border border-gray-200 p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div className="text-center">
+                <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <Users size={24} className="text-indigo-600" />
+                </div>
+                <p className="font-semibold text-gray-800">व्यापारी</p>
+                <p className="text-xs text-gray-500">Traders</p>
               </div>
             </button>
           </div>
