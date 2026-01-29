@@ -1,18 +1,5 @@
 import React, { useState } from 'react';
-import { 
-  Clock, 
-  User, 
-  MessageCircle, 
-  IndianRupee as Rupee, 
-  ArrowLeft,
-  Phone,
-  Shield,
-  TrendingUp,
-  Package,
-  Check,
-  X,
-  Edit3
-} from 'lucide-react';
+import { Clock, User, MessageCircle, IndianRupee as Rupee, ArrowLeft, Phone, Shield, TrendingUp, Package, Check, X, CreditCard as Edit3 } from 'lucide-react';
 import { Produce, Bid } from '../../types';
 
 interface FarmerBidManagementProps {
