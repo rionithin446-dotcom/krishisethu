@@ -1,20 +1,5 @@
 import React, { useState } from 'react';
-import { 
-  ArrowLeft, 
-  Plus, 
-  Edit, 
-  Trash2,
-  Eye,
-  Upload,
-  FileText,
-  Award,
-  DollarSign,
-  Shield,
-  BookOpen,
-  ExternalLink,
-  Save,
-  X
-} from 'lucide-react';
+import { ArrowLeft, Plus, CreditCard as Edit, Trash2, Eye, Upload, FileText, Award, DollarSign, Shield, BookOpen, ExternalLink, Save, X } from 'lucide-react';
 import { GovernmentScheme } from '../../types';
 
 interface SchemeManagementProps {

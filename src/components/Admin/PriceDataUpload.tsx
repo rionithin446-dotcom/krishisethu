@@ -1,19 +1,5 @@
 import React, { useState } from 'react';
-import { 
-  ArrowLeft, 
-  Upload, 
-  Download, 
-  TrendingUp,
-  CheckCircle,
-  AlertTriangle,
-  FileText,
-  Calendar,
-  MapPin,
-  Plus,
-  Edit,
-  Trash2,
-  Save
-} from 'lucide-react';
+import { ArrowLeft, Upload, Download, TrendingUp, CheckCircle, AlertTriangle, FileText, Calendar, MapPin, Plus, CreditCard as Edit, Trash2, Save } from 'lucide-react';
 
 interface PriceDataUploadProps {
   onBack: () => void;
